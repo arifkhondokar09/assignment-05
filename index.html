@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dev board</title>
+    <script src="https://kit.fontawesome.com/e354a256e6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="max-w-6xl min-h-screen mx-auto px-32 bg-slate-300 py-5 ">
+    <header >
+        <nav class="flex bg-white rounded-xl p-6">
+           <div class="flex flex-1">
+            <div><img src="assets/logo.png" alt=""></div>
+            <p class="text-4xl">Dev<span class="text-4xl font-black">Board</span></p>
+           </div>
+            <div class="flex ">
+                <button id="btn-number" class="btn" ><i class="fa-solid fa-square-check"></i>23</button>
+                <button class="btn rounded-full"><img src="assets/theme-btn.png" alt=""></button>
+            </div>
+       
+     </nav>
+
+
+
+
+    </header>
+    <main>
+        <!-- hero section    -->
+
+<section class="flex ">
+
+
+<div class="w-3/4">
+    <div class=" bg-white p-4 rounded-xl my-6 flex gap-3   ">
+       
+       <!-- first part of hero  -->
+       
+           <div class="flex items-center p-5  bg-slate-300 rounded-xl ">
+               <div class="p-3 bg-white rounded-full"> <img src="assets/checkbox.png" alt=""></div>
+                <div class="p-2"><p class="font-medium">Task Assigned </p>
+                    <p id="task" class="font-bold text-3xl">05</p></div>
+            </div>
+            <div class="flex  p-5 bg-gradient-to-r from-blue-600 to-blue-300 rounded-xl">
+                <div><img src="assets/board.png" alt=""></div>
+                <p class="text-2xl font-medium text-white  ">Discover Something <br> New Today!</p>
+            </div>
+            <div class="flex p-5 bg-slate-300 rounded-xl"> 
+                <div class="items-center inline-flex"><img  class=" rounded-full p-3 bg-white " src="assets/calender.png" alt=""></div >
+               <p class="p-2">Wed , <br>
+                <span class="font-bold text-2xl ">Jul 28 2025</span> </p>
+            </div>
+        
+       
+        </div>
+        
+       
+       <!-- grid section  -->
+       <div class="grid grid-cols-3 gap-4 p-4 rounded-xl  bg-white  ">
+       
+           <div class=" bg-slate-100 p-2  space-y-3 rounded-xl " >
+               <button class="font-medium bg-white p-1 rounded-xl">ShopEase</button>
+               <h3 class="font-bold text-xl ">Fix Mobile Button Issue </h3>
+               <p class="overflow-auto bg-white p-1 rounded-lg"> Debug using Chrome DevTools, check for..</p>
+              <div class="flex items-center">
+                   <div >
+                       <p class="">Deadline</p>
+                       <p class="font-medium text-lg">21 March 2025</p>
+                   </div>
+                  <div> <button id="btn-fix-mobile" class="border  rounded-lg py-2 px-3 bg-blue-600 text-white"  >completed</button></div>
+           </div>
+           </div>
+       
+           <div class=" bg-slate-100 p-2 space-y-3 rounded-xl" >
+               <button class="font-medium bg-white p-1 rounded-xl">CloudSync</button>
+               <h3 class="font-bold text-xl ">Add Dark Mode </h3>
+               <p class="overflow-auto bg-white p-1 rounded-lg"> Debug using Chrome DevTools, check for..</p>
+              <div class="flex items-center">
+                   <div >
+                       <p class="">Deadline</p>
+                       <p class="font-medium text-lg">21 March 2025</p>
+                   </div>
+                  <div> <button id="btn-dark-mode" class="border  rounded-lg py-2 px-3 bg-blue-600 text-white" disabled>completed</button></div>
+           </div>
+           </div>
+       
+           <div class=" bg-slate-100 p-2  space-y-3 rounded-xl" >
+               <button class="font-medium bg-white p-1 rounded-xl">SwiftPay</button>
+               <h3 class="font-bold text-xl ">Optimize  Home page  </h3>
+               <p class="overflow-auto bg-white p-1 rounded-lg"> Debug using Chrome DevTools, check for..</p>
+              <div class="flex items-center">
+                   <div >
+                       <p class="">Deadline</p>
+                       <p class="font-medium text-lg">21 March 2025</p>
+                   </div>
+                  <div> <button  id="btn-optimize" class="border  rounded-lg py-2 px-3 bg-blue-600 text-white" disabled>completed</button></div>
+           </div>
+           </div>
+       
+           <div class=" bg-slate-100 p-2 space-y-3 rounded-xl" >
+               <button class="font-medium bg-white p-1 rounded-xl">Meta</button>
+               <h3 class="font-bold text-xl ">Add new emoji 🤲 </h3>
+               <p class="overflow-auto bg-white p-1 rounded-lg"> Debug using Chrome DevTools, check for..</p>
+              <div class="flex items-center">
+                   <div >
+                       <p class="">Deadline</p>
+                       <p class="font-medium text-lg">21 March 2025</p>
+                   </div>
+                  <div> <button id="btn-emoji" class="border  rounded-lg py-2 px-3 bg-blue-600 text-white" disabled>completed</button></div>
+           </div>
+           </div>
+       
+           <div class=" bg-slate-100 p-2  space-y-3 rounded-xl" >
+               <button class="font-medium bg-white p-1 rounded-xl">Google LLC</button>
+               <h3 class="font-bold text-xl ">Integrate OpenAI API </h3>
+               <p class="overflow-auto bg-white p-1 rounded-lg"> Debug using Chrome DevTools, check for..</p>
+              <div class="flex items-center">
+                   <div >
+                       <p class="">Deadline</p>
+                       <p class="font-medium text-lg">21 March 2025</p>
+                   </div>
+                  <div> <button id="btn-openai" class="border  rounded-lg py-2 px-3 bg-blue-600 text-white" disabled>completed</button></div>
+           </div>
+           </div>
+       
+           <div class=" bg-slate-100 p-2 space-y-3 rounded-xl" >
+               <button class="font-medium bg-white p-1 rounded-xl">Glassdoar</button>
+               <h3 class="font-bold text-xl ">Improve Job searching  </h3>
+               <p class="overflow-auto bg-white p-1 rounded-lg"> Debug using Chrome DevTools, check for..</p>
+              <div class="flex items-center">
+                   <div >
+                       <p class="">Deadline</p>
+                       <p class="font-medium text-lg">21 March 2025</p>
+                   </div>
+                  <div> <button id="btn-job" class="border  rounded-lg py-2 px-3 bg-blue-600 text-white" disabled>completed</button></div>
+           </div>
+           </div>
+          
+       
+           
+          
+       
+        </div>
+    </div>
+
+
+
+
+<!-- activity log -->
+<div id="notification" class="w-1/4 border text-center py-3 my-6 border-3 bg-white rounded-xl border-black ml-6">
+    <p class="text-xl font-medium">activity log</p>
+    <button class="bg-blue-600 px-2 py-1 text-lg text-white  rounded-lg my-3" id="btn-clear-history">clear history</button>
+   
+
+    </div>
+</div>
+
+</section>
+</main>
+
+<script>
+
+</script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
