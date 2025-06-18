@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 px-6 py-10">
+
+  <!-- Back to Home Button -->
+  <div class="mb-6">
+    <a href="index.html" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">
+      Back to Home
+    </a>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="space-y-6 max-w-3xl mx-auto">
+
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold text-blue-700 mb-2">Question 1: What are the different ways to select an element
+        in the DOM?</h2>
+      <p>
+        There are several ways to select elements from the DOM such as `getElementById`, `getElementsByClassName`,
+        `getElementsByTagName`, `querySelector`, and `querySelectorAll`. Among them, `querySelector` is very flexible
+        and works like CSS selectors to locate elements.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold text-blue-700 mb-2">Question 2: What is the difference between innerHTML,
+        innerText, and textContent?</h2>
+      <p>
+        `innerHTML` returns the HTML along with tags. `innerText` returns only the visible text, excluding hidden
+        elements via CSS. On the other hand, `textContent` returns all text, even hidden ones, but ignores the HTML
+        tags. Each has different use cases.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold text-blue-700 mb-2">Question 3: What is event delegation in the DOM?</h2>
+      <p>
+        Event delegation is a technique where an event listener is added to a parent element instead of multiple child
+        elements. The event is then handled through the parent when triggered by its children. This improves performance
+        and works with dynamically added elements.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold text-blue-700 mb-2">Question 4: What is event bubbling in the DOM?</h2>
+      <p>
+        Event bubbling is a behavior in the DOM where an event starts from the innermost element and propagates up to
+        the outer elements. That means the event triggers on the child first, then its parent, and then further
+        ancestors. It is useful in event handling.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold text-blue-700 mb-2">Question 5: How do you create, add, and remove elements using
+        JavaScript?</h2>
+      <p>
+        In JavaScript, you can create a new element using `document.createElement`. Then it can be added to the DOM
+        using `append` or `appendChild`. To remove an element, you can use `removeChild` or simply `element.remove()`.
+        This helps in manipulating the DOM structure.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
